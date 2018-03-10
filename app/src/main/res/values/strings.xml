@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">WoW Races</string>
+    <string name="copyrights">© Art: dcmjs.com  \n© Icons and info: Blizzard</string>
+
+    <string name="alliance">Alliance</string>
+    <string name="horde">Horde</string>
+
+    <string name="tab_overview">Overview</string>
+    <string name="tab_racials">Racials</string>
+    <string name="tab_classes">Classes</string>
+    <string name="tab_misc">More</string>
+
+    <string name="human">Human</string>
+    <string name="human_desc">The humans are the most populous and the youngest race in Azeroth.
+        The humans have become the de facto leaders of the Alliance, with their youthful ambitions
+        and resilience.
+        \n\nLeader: Anduin Wrynn.
+        \n\nCapital City: The human seat of power is in the rebuilt city of Stormwind City.
+        \n\nStarting Zone: Humans begin questing in Elwynn Forest.
+        \n\nRacial Mounts: Katie Stokx sells armoried ponies in Stormwind, and Corporal Arthur Flew at the Argent Tournament has a few distinct models.
+    </string>
+
+    <string name="dwarf">Dwarf</string>
+    <string name="dwarf_desc">The dwarves are a hardy race, hailing from Khaz Modan in the Eastern
+        Kingdoms. Rumor has it they are descended from the Titans. There are three main clans of
+        dwarves vying for power in Ironforge: the Bronzebeards, Wildhammers, and Dark Irons.</string>
+
+    <string name="gnome">Gnome</string>
+    <string name="gnome_desc"> The gnomes are a quirky race, obsessed with gadgets and technology.
+        They originally come from the city of New Tinkertown, which was destroyed by High Tinker Mekkatorque
+        in an attempt to save it from an invading army of troggs.</string>
+
+    <string name="night_elf">Night Elf</string>
+    <string name="night_elf_desc"> The night elves are an ancient and mysterious race. They lived in
+        Kalimdor for thousands of years, undisturbed until the world tree was sacrificed to halt the
+        advance of the Burning Legion prior to the events of World of Warcraft.</string>
+
+    <string name="draenei">Draenei</string>
+    <string name="draenei_desc">The Draenei are followers of the Naaru and worshipers of the Holy Light.
+        They originally hail from the distant world of Argus, fleeing after Sargeras tried to corrupt them.
+        They then settled on the Orcish homeworld of Draenor, where after a period of peace, they were
+        brutally murdered during Guldan's corruption of the Orcs. Finally they settled in Azeroth, to seek
+        aid in their battle against the Burning Legion. \n\nDraenei were introduced in the Burning Crusade expansion.</string>
+
+    <string name="worgen">Worgen</string>
+    <string name="worgen_desc">Behind the formidable Greymane Wall,a terrible curse transformed
+        some of the stalwart citizens of the isolated kingdom of Gilneas into nightmarish lupine
+        beasts known as worgen. Human scholars intensely debated the origins of the curse, until
+        it was revealed that the original worgen were not—as previously believed—nightmares from
+        another dimension, but cursed night elf druids.</string>
+
+    <string name="orc">Orc</string>
+    <string name="orc_desc">The orcs were originally a race of noble savages, residing on the world
+        of Draenor. Unfortunately, The Burning Legion made use of them in an attempt to conquer Azeroth
+        — they were infected with the daemonic blood of Mannoroth the Destructor, driven mad, and turned
+        upon both the Draenei and the denizens of Azeroth. After losing the Second War, they were cut
+        off from the corrupting influence of Mannoroth, and began to return to their shamanistic roots.
+        Now, under the leadership of their new Warchief, the orcs are carving out a home for themselves in Azeroth.</string>
+
+    <string name="troll">Troll</string>
+    <string name="troll_desc"> While there are many different tribes of trolls scattered across Azeroth,
+        only the Darkspear Tribe has ever sworn allegiance to the Horde. The trolls originally lived in
+        the Broken Isles, but were overrun by naga and murlocs and driven from their home. The orcs,
+        led by Thrall, saved the Darkspear tribe from certain destruction and offered them amnesty among
+        the Horde. In return, the Darkspear tribe swore fealty to the orcish warchief.</string>
+
+    <string name="tauren">Tauren</string>
+    <string name="tauren_desc">The tauren, a race with deep shamanistic roots, are longtime residents
+        of Kalimdor. They have a deep and abiding love of nature, and the vast majority of them worship
+        a deity known as the Earth Mother.</string>
+
+    <string name="undead">Undead</string>
+    <string name="undead_desc">When the undead scourge initially swept across Azeroth, they converted
+        a number of members of the Alliance to the undead. When the combined forces of the orcs, elves,
+        trolls, dwarves and humans began to fight back, though, The Lich King\'s hold on his forces
+        began to weaken. A small faction of humans, known as the Forsaken, broke free of the Lich King's control.
+        \n\nNow, free of the bonds of servitude as well as the troublesome emotions and connections of their human lives,
+        the Forsaken have found a new home—with the Horde.</string>
+
+    <string name="blood_elf">Blood Elf</string>
+    <string name="bloodelf_desc">The blood elves are a proud, haughty race, joining the Horde in
+        Burning Crusade. They represent a faction of former high elves, split off from the rest of elven
+        society; they are also survivors of Arthas\' assault on Silvermoon. Blood elves are fully dependent
+        on magic, having revelled in its power for so long that they suffer horrible withdrawal if it
+        were to be taken away.</string>
+
+    <string name="goblin">Goblin</string>
+    <string name="goblin_desc">After series of cataclysmic events in the Lost Isles and the Undermine,
+        a betrayal from one of their own trade princes, and open hostility from members of the Alliance,
+        the goblins of the Bilgewater Cartel decide that their relations with the Horde can no longer
+        be neutral. Through the orcs, the goblins enter the Horde, becoming the 6th race to follow the
+        Warchief\'s leadership.</string>
+
+
+    <string name="warrior">Warrior</string>
+    <string name="paladin">Paladin</string>
+    <string name="death_knight">Death Knight</string>
+    <string name="shaman">Shaman</string>
+    <string name="hunter">Hunter</string>
+    <string name="druid">Druid</string>
+    <string name="rogue">Rogue</string>
+    <string name="mage">Mage</string>
+    <string name="warlock">Warlock</string>
+    <string name="priest">Priest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

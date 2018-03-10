@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Color of the app bar: -->
+        <item name="colorPrimary">@color/colorVeryDark</item>
+        <!-- Color of the status bar: -->
+        <item name="colorPrimaryDark">@color/colorVeryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAppearance">@font/selfa</item>
+    </style>
+
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/selfa</item>
+    </style>
+
+    <style name="StyleRaceButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorButtons</item>
+        <item name="android:fontFamily">@font/selfa</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/big_text</item>
+        <item name="android:padding">@dimen/medium_padding</item>
+        <item name="android:onClick">onClickShowRace</item>
+    </style>
+
+
+    <style name="ClassFrame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:layout_marginBottom">@dimen/very_small_padding</item>
+    </style>
+    <style name="ClassImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="ClassName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/medium_padding</item>
+        <item name="android:paddingLeft">@dimen/small_padding</item>
+        <item name="android:paddingBottom">@dimen/very_small_padding</item>
+        <item name="android:textSize">@dimen/kinda_big_text</item>
+        <item name="android:fontFamily">@font/selfa</item>
+    </style>
+    <style name="ClassSpec">
+        <item name="android:layout_below">@+id/class_name</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/very_small_text</item>
+        <item name="android:paddingLeft">@dimen/small_padding</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">@font/selfa</item>
+    </style>
+
+</resources>

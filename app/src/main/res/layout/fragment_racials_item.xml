@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/small_padding"
+    android:paddingBottom="@dimen/small_padding">
+
+    <ImageView
+        android:id="@+id/racial_icon"
+        tools:src="@drawable/human_racial_diplomacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding" />
+    <TextView
+        android:id="@+id/racial_name"
+        tools:text="Placeholder Text Name"
+        android:layout_toRightOf="@+id/racial_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:width="100dp"/>
+    <TextView
+        android:id="@+id/racial_type"
+        tools:text="Passive"
+        android:layout_toRightOf="@+id/racial_icon"
+        android:layout_below="@+id/racial_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/small_padding"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/racial_desc"
+        tools:text="Placeholder text representing the racial ability description. Usually short."
+        android:layout_toRightOf="@+id/racial_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        android:justificationMode="inter_word"/>
+
+</RelativeLayout>

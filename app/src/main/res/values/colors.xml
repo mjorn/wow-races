@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#cccccc</color>
+    <color name="colorPrimaryDark">#7e7e7e</color>
+    <color name="colorVeryDark">#242020</color>
+    <color name="colorAccent">#ebd6d3</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorAccentDark">#ac999a</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorButtons">#302c2d</color>
+    <color name="colorBack">#302c2c</color>
+
+    <!-- Class colors -->
+    <color name="warriorColor">#C79C6E</color>
+    <color name="paladinColor">#F58CBA</color>
+    <color name="deathKnightColor">#C41F3B</color>
+    <color name="shamanColor">#0070DE</color>
+    <color name="hunterColor">#ABD473</color>
+    <color name="druidColor">#FF7D0A</color>
+    <color name="rogueColor">#FFF569</color>
+    <color name="priestColor">#FFFFFF</color>
+    <color name="warlockColor">#9482C9</color>
+    <color name="mageColor">#69CCF0</color>
+
+</resources>

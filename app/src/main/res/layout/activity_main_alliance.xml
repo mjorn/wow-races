@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorButtons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/button_alliance"
+            android:text="@string/alliance"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/selfa"
+            android:onClick="onClickAlliance"/>
+        <Button
+            android:id="@+id/button_horde"
+            android:text="@string/horde"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/selfa"
+            android:onClick="onClickHorde"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_alliance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:text="@string/human"
+                android:id="@+id/button_race_human"
+                android:drawableBottom="@drawable/human"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/dwarf"
+                android:id="@+id/button_race_dwarf"
+                android:drawableBottom="@drawable/dwarf"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/gnome"
+                android:id="@+id/button_race_gnome"
+                android:drawableBottom="@drawable/gnome"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/night_elf"
+                android:id="@+id/button_race_nightelf"
+                android:drawableBottom="@drawable/nightelf"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/draenei"
+                android:id="@+id/button_race_draenei"
+                android:drawableBottom="@drawable/draenei"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/worgen"
+                android:id="@+id/button_race_worgen"
+                android:drawableBottom="@drawable/worgen"
+                android:fontFamily="@font/selfa"
+                style="@style/StyleRaceButtons"/>
+
+            <TextView
+                android:id="@+id/copyright"
+                android:text="@string/copyrights"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/small_text"
+                android:padding="@dimen/small_padding"
+                android:textColor="@color/colorPrimaryDark"
+                style="@style/Text"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

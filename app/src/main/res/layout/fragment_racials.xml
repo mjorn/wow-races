@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorButtons"
+    >
+
+    <ImageView
+        android:id="@+id/racials_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitEnd"
+        android:scaleX="-1"/>
+
+    <ListView
+        android:id="@+id/list_view_racials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:listitem="@layout/fragment_racials_item"
+        />
+
+</RelativeLayout>

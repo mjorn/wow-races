@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorButtons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/button_alliance"
+            android:text="@string/alliance"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/selfa"
+            android:onClick="onClickAlliance"/>
+        <Button
+            android:id="@+id/button_horde"
+            android:text="@string/horde"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/selfa"
+            android:onClick="onClickHorde"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_horde"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:text="@string/orc"
+                android:id="@+id/button_race_orc"
+                android:drawableBottom="@drawable/orc"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/troll"
+                android:id="@+id/button_race_troll"
+                android:drawableBottom="@drawable/troll"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/tauren"
+                android:id="@+id/button_race_tauren"
+                android:drawableBottom="@drawable/tauren"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/undead"
+                android:id="@+id/button_race_undead"
+                android:drawableBottom="@drawable/undead"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/blood_elf"
+                android:id="@+id/button_race_bloodelf"
+                android:drawableBottom="@drawable/bloodelf"
+                style="@style/StyleRaceButtons"/>
+
+            <Button
+                android:text="@string/goblin"
+                android:id="@+id/button_race_goblin"
+                android:drawableBottom="@drawable/goblin"
+                style="@style/StyleRaceButtons"/>
+
+            <TextView
+                android:id="@+id/copyright"
+                android:text="@string/copyrights"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/small_text"
+                android:padding="@dimen/small_padding"
+                android:textColor="@color/colorPrimaryDark"
+                style="@style/Text"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
