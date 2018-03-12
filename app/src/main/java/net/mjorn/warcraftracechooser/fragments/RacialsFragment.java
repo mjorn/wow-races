@@ -2,6 +2,10 @@ package net.mjorn.warcraftracechooser.fragments;
 
 import android.app.Activity;
 import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
@@ -12,10 +16,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import net.mjorn.warcraftracechooser.DatabaseHelper;
 import net.mjorn.warcraftracechooser.R;
-import net.mjorn.warcraftracechooser.races.Racial;
-
-import java.util.List;
 
 public class RacialsFragment extends RaceFragment {
 
@@ -38,13 +40,13 @@ public class RacialsFragment extends RaceFragment {
         }
     }
 
-    private class RacialAdapter extends ArrayAdapter<Racial> {
+    private class RacialAdapter extends ArrayAdapter<Integer> {
 
         Context context;
         int resource;
-        List<Racial> list;
+        Integer[] list;
 
-        public RacialAdapter(Context context, int resource, List<Racial> list) {
+        public RacialAdapter(Context context, int resource, Integer[] list) {
             super(context, resource, list);
             this.context = context;
             this.resource = resource;
@@ -57,14 +59,15 @@ public class RacialsFragment extends RaceFragment {
 
             View row = convertView;
             RacialViewHolder holder = null;
+            SQLiteOpenHelper dbHelper = new DatabaseHelper(context);
 
             if (row == null) {
                 LayoutInflater inflater = ((Activity) context).getLayoutInflater();
                 row = inflater.inflate(R.layout.fragment_racials_item, parent, false);
 
                 holder = new RacialViewHolder();
-                holder.icon = row.findViewById(R.id.racial_icon);
                 holder.name = row.findViewById(R.id.racial_name);
+                holder.icon = row.findViewById(R.id.racial_icon);
                 holder.type = row.findViewById(R.id.racial_type);
                 holder.desc = row.findViewById(R.id.racial_desc);
 
@@ -73,12 +76,28 @@ public class RacialsFragment extends RaceFragment {
                 holder = (RacialViewHolder) row.getTag();
             }
 
-            Racial racial = getItem(position);
+            Integer item = getItem(position);
 
-            holder.icon.setImageResource(racial.getIcon());
-            holder.name.setText(racial.getName());
-            holder.type.setText(racial.getType().toString());
-            holder.desc.setText(racial.getDesc());
+            if(item!=null) {
+                try {
+                    SQLiteDatabase db = dbHelper.getReadableDatabase();
+                    Cursor cursor = db.query(
+                            "RACIALS",
+                            new String[]{"NAME", "ICON", "TYPE", "DESCR"},
+                            "NAME = ?",
+                            new String[]{item.toString()},
+                            null, null, null);
+                    if(cursor.moveToFirst()) {
+                        holder.name.setText(cursor.getInt(0));
+                        holder.icon.setImageResource(cursor.getInt(1));
+                        holder.type.setText(cursor.getInt(2));
+                        holder.desc.setText(cursor.getInt(3));
+                    }
+                    cursor.close();
+                    db.close();
+                } catch(SQLiteException e) {}
+
+            }
 
             return row;
         }

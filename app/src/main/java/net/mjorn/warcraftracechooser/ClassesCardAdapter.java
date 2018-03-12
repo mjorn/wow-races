@@ -1,41 +1,62 @@
 package net.mjorn.warcraftracechooser;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import net.mjorn.warcraftracechooser.races.WowClass;
-
-import java.util.List;
+import android.widget.Toast;
 
 public class ClassesCardAdapter extends RecyclerView.Adapter<ClassesCardAdapter.ViewHolder> {
-    private List list;
+    private int[] list;
     private Context context;
+    private SQLiteOpenHelper dbHelper;
     //private Listener listener;
 
-    public ClassesCardAdapter(Context context, List list) {
+    public ClassesCardAdapter(Context context, int[] list) {
         this.list = list;
         this.context = context;
+        dbHelper = new DatabaseHelper(context);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-        WowClass wowClass = (WowClass) list.get(position);
         CardView card = holder.cardView;
-        ImageView image = card.findViewById(R.id.class_image);
         TextView name = card.findViewById(R.id.class_name);
+        ImageView image = card.findViewById(R.id.class_image);
         TextView specs = card.findViewById(R.id.class_specs);
 
-        image.setImageResource(wowClass.image);
-        name.setText(wowClass.name);
-        name.setTextColor(context.getResources().getColor(wowClass.color));
-        specs.setText(wowClass.specs);
+        int item = list[position];
+
+        System.out.println("Binding view for item "+item);
+
+        try {
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            Cursor cursor  = db.query(
+                    "CLASSES",
+                    new String[]{"NAME", "COLOR", "IMAGE", "SPECS"},
+                    "NAME = ?",
+                    new String[]{Integer.toString(item)},
+                    null, null, null);
+            if(cursor.moveToFirst()) {
+                name.setText(cursor.getInt(0));
+                name.setTextColor(context.getResources().getColor(cursor.getInt(1)));
+                image.setImageResource(cursor.getInt(2));
+                specs.setText(cursor.getInt(3));
+            }
+            cursor.close();
+            db.close();
+        } catch (SQLiteException e) {
+            Toast.makeText(context, e.getMessage(), Toast.LENGTH_LONG);
+        }
+
 
 //        card.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -58,7 +79,7 @@ public class ClassesCardAdapter extends RecyclerView.Adapter<ClassesCardAdapter.
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return list.length;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

@@ -5,11 +5,13 @@
     <string name="alliance">Alliance</string>
     <string name="horde">Horde</string>
 
+    <!-- Navigation -->
     <string name="tab_overview">Overview</string>
     <string name="tab_racials">Racials</string>
     <string name="tab_classes">Classes</string>
     <string name="tab_misc">More</string>
 
+    <!-- Races -->
     <string name="human">Human</string>
     <string name="human_desc">The humans are the most populous and the youngest race in Azeroth.
         The humans have become the de facto leaders of the Alliance, with their youthful ambitions
@@ -91,7 +93,7 @@
         be neutral. Through the orcs, the goblins enter the Horde, becoming the 6th race to follow the
         Warchief\'s leadership.</string>
 
-
+    <!-- Classes -->
     <string name="warrior">Warrior</string>
     <string name="paladin">Paladin</string>
     <string name="death_knight">Death Knight</string>
@@ -103,7 +105,141 @@
     <string name="warlock">Warlock</string>
     <string name="priest">Priest</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Classes: specializations -->
+    <string name="warrior_specs">Arms · Fury · Protection</string>
+    <string name="paladin_specs">Holy · Retribution · Protection</string>
+    <string name="death_knight_specs">Blood · Unholy · Frost</string>
+    <string name="shaman_specs">Elemental · Enhancement · Restoration</string>
+    <string name="hunter_specs">Beast Mastery · Survival · Marksmanship</string>
+    <string name="druid_specs">Restoration · Balance · Guardian · Feral</string>
+    <string name="rogue_specs">Assassination · Outlaw · Subtlety</string>
+    <string name="priest_specs">Holy · Discipline · Shadow</string>
+    <string name="mage_specs">Fire · Frost · Arcane</string>
+    <string name="warlock_specs">Destruction · Affliction · Demonology</string>
+
+    <!-- Racials -->
+
+    <string name="passive">Passive</string>
+    <string name="active">Active</string>
+
+    <string name="nature_resistance">Nature Resistance</string>
+    <string name="nature_resistance_desc">Reduces Nature damage taken by 1%.</string>
+    <string name="shadow_resistance">Shadow Resistance</string>
+    <string name="shadow_resistance_desc">Reduces Shadow damage taken by 1%.</string>
+    <string name="arcane_resistance">Arcane Resistance</string>
+    <string name="arcane_resistance_desc">Reduces Arcane damage taken by 1%.</string>
+
+    <!-- Human -->
+    <string name="diplomacy">Diplomacy</string>
+    <string name="diplomacy_desc">Reputation gains increased by 10%.</string>
+    <string name="every_man_for_himself">Every Man for Himself</string>
+    <string name="every_man_for_himself_desc">Removes all stun effects. This effect shares a 30 sec cooldown with other similar effects.</string>
+    <string name="the_human_spirit">The Human Spirit</string>
+    <string name="the_human_spirit_desc">You gain 2% more of all secondary stats (Haste, Critical Strike, Mastery, Versatility) from all sources.</string>
+    <!-- Dwarf -->
+    <string name="explorer">Explorer</string>
+    <string name="explorer_desc">You find additional fragments when looting archaeological finds and you can survey faster than normal archaeologists.</string>
+    <string name="frost_resistance">Frost Resistance</string>
+    <string name="frost_resistance_desc">Reduces Frost damage taken by 1%.</string>
+    <string name="might_of_the_mountain">Might of the Mountain</string>
+    <string name="might_of_the_mountain_desc">Critical strike damage and healing increased by 2%.</string>
+    <string name="stoneform">Stoneform</string>
+    <string name="stoneform_desc">Removes all poison, disease, curse, magic, and bleed effects and reduces all physical damage taken by 10% for 8 sec.</string>
+    <!-- Gnome -->
+    <string name="engineering_specialization">Engineering Specialization</string>
+    <string name="engineering_specialization_desc">Engineering skill increased by 15.</string>
+    <string name="escape_artist">Escape Artist</string>
+    <string name="escape_artist_desc">Escape the effects of any immobilization or movement speed reduction effect.</string>
+    <string name="expansive_mind">Expansive Mind</string>
+    <string name="expansive_mind_desc">Maximum mana/energy/runic power/focus/rage increased by 5%.</string>
+    <string name="nimble_fingers">Nimble Fingers</string>
+    <string name="nimble_fingers_desc">Haste increased by 1%.</string>
+    <!-- + arcane resistance -->
+    <!-- Night Elf -->
+    <string name="quickness">Quickness</string>
+    <string name="quickness_desc">Increases your chance to dodge melee and ranged attacks by 2%, and your movement speed by 2%.</string>
+    <string name="shadowmeld">Shadowmeld</string>
+    <string name="shadowmeld_desc">Activate to slip into the shadows, reducing the chance for enemies to detect your presence. Lasts until cancelled or upon moving. Any threat is restored versus enemies still in combat upon cancellation of this effect.</string>
+    <string name="touch_of_elune">Touch of Elune</string>
+    <string name="touch_of_elune_desc">Increases your Haste by 1% during the night. Increases your Critical Strike by 1% during the day.</string>
+    <string name="wisp_spirit">Wisp Spirit</string>
+    <string name="wisp_spirit_desc">Transform into a wisp upon death, increasing speed by 75%.</string>
+    <!-- + nature resistance -->
+    <!-- Draenei -->
+    <string name="gemcutting">Gemcutting</string>
+    <string name="gemcutting_desc">Jewelcrafting skill increased by 10.</string>
+    <string name="gift_of_the_naaru">Gift of the Naaru</string>
+    <string name="gift_of_the_naaru_desc">Heals the target for 20% of the caster\'s total health over 5 sec.</string>
+    <string name="heroic_presence">Heroic Presence</string>
+    <string name="heroic_presence_desc">Increases your Strength, Agility, and Intellect by 425 (scales with level).</string>
+    <!-- + shadow resistance -->
+    <!-- Worgen -->
+    <string name="altered_form">Altered Form</string>
+    <string name="altered_form_desc">Enables Worgens to switch between human and Worgen forms.</string>
+    <string name="two_forms">Two Forms</string>
+    <string name="two_forms_desc">Turn into your currently inactive form.</string>
+    <string name="darkflight">Darkflight</string>
+    <string name="darkflight_desc">Activates your true form, increasing current movement speed by an additional 40% for 10 sec.</string>
+    <string name="running_wild">Running Wild</string>
+    <string name="running_wild_desc">(Mount) Drop to all fours to run as fast as a wild animal.</string>
+    <string name="aberration">Aberration</string>
+    <string name="aberration_desc">Reduces Shadow and Nature damage taken by 1%.</string>
+    <string name="flayer">Flayer</string>
+    <string name="flayer_desc">Skinning skill increased by 15 and allows you to skin faster.</string>
+    <string name="viciousness">Viciousness</string>
+    <string name="viciousness_desc">Increases critical strike chance by 1%.</string>
+    <!-- Orc -->
+    <string name="blood_fury">Blood Fury</string>
+    <string name="blood_fury_desc">Increases your melee attack power by 2243 and/or your spell power by 2243 for 15 sec.</string>
+    <string name="hardiness">Hardiness</string>
+    <string name="hardiness_desc">Duration of Stun effects reduced by an additional 20%.</string>
+    <!-- Troll -->
+    <string name="berserking">Berserking</string>
+    <string name="berserking_desc">Increases your haste by 15% for 10 sec.</string>
+    <string name="beast_slaying">Beast Slaying</string>
+    <string name="beast_slaying_desc">Experience gains from killing Beasts increased by 20%.</string>
+    <string name="da_voodoo_shuffle">Da Voodoo Shuffle</string>
+    <string name="da_voodoo_shuffle_desc">Reduces the duration of all movement impairing effects by 20%. Trolls be flippin\' out mon!</string>
+    <string name="regeneration">Regeneration</string>
+    <string name="regeneration_desc">Health regeneration rate increased by 10%. 10% of total Health regeneration may continue during combat.</string>
+    <!-- Tauren -->
+    <string name="war_stomp">War Stomp</string>
+    <string name="war_stomp_desc">Stuns up to 5 enemies within 8 yds for 2 sec.</string>
+    <string name="brawn">Brawn</string>
+    <string name="brawn_desc">Critical strike damage and healing increased by 2%.</string>
+    <string name="cultivation">Cultivation</string>
+    <string name="cultivation_desc">Herbalism skill increased by 15 and you gather herbs faster than normal herbalists.</string>
+    <string name="endurance">Endurance</string>
+    <string name="endurance_desc">Increases your Stamina by 1283 (scales with level).</string>
+    <!-- + nature resistance -->
+    <!-- Undead -->
+    <string name="cannibalize">Cannibalize</string>
+    <string name="cannibalize_desc">When activated, regenerates 7% of total health and mana every 2 sec for 10 sec. Only works on Humanoid or Undead corpses within 5 yds. Any movement, action, or damage taken while Cannibalizing will cancel the effect.</string>
+    <string name="will_of_the_forsaken">Will of the Forsaken</string>
+    <string name="will_of_the_forsaken_desc">Removes any Charm, Fear and Sleep effect. This effect shares a 30 sec cooldown with other similar effects.</string>
+    <string name="touch_of_the_grave">Touch of the Grave</string>
+    <string name="touch_of_the_grave_desc">Your attacks and damaging spells have a chance to drain the target, dealing [max(Attack power * 1.25, Spell power) * $pctD * (1 + Versatility)] Shadow damage and healing you for the same amount. Additionally, you can breathe underwater indefinitely.</string>
+    <!-- + shadow resistance -->
+    <!-- Blood Elf -->
+    <string name="arcane_torrent">Arcane Torrent</string>
+    <string name="arcane_torrent_desc">Silence all enemies within 8 yards for 2 sec and restore 3% of your Mana / 20 Runic Power / 15 Fury / 15 Focus / 15 Energy.  Non-player victim spellcasting is also interrupted for 3 sec.</string>
+    <string name="arcane_acuity">Arcane Acuity</string>
+    <string name="arcane_acuity_desc">Increases critical strike chance by 1%.</string>
+    <string name="arcane_affinity">Arcane Affinity</string>
+    <string name="arcane_affinity_desc">Enchanting skill increased by 10.</string>
+    <!-- + arcane resistance -->
+    <string name="placeholder">P</string>
+    <string name="pack_hobgoblin">Pack Hobgoblin</string>
+    <string name="pack_hobgoblin_desc">Calls in your friend, Gobber, allowing you bank access for 1 min.</string>
+    <string name="rocket_barrage">Rocket Barrage</string>
+    <string name="rocket_barrage_desc">Launches your belt rockets at an enemy, dealing (1 + Level * 2) fire damage.</string>
+    <string name="rocket_jump">Rocket Jump</string>
+    <string name="rocket_jump_desc">Activates your rocket belt to jump forward. Other effects which slow the rate of falling cannot be used within 10 sec after using this ability.</string>
+    <string name="best_deals_anywhere">Best Deals Anywhere</string>
+    <string name="best_deals_anywhere_desc">Always receive the best possible gold discount, regardless of faction.</string>
+    <string name="better_living">Better Living Through Chemistry</string>
+    <string name="better_living_desc">Alchemy skill increased by 15.</string>
+    <string name="time_is_money">Time is Money</string>
+    <string name="time_is_money_desc">Cash in on a 1% increase to haste.</string>
 
 </resources>

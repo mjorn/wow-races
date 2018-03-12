@@ -1,13 +1,33 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding"
+
     tools:context="net.mjorn.warcraftracechooser.fragments.MiscFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:text="Jokes"
+        android:layout_width="match_parent"
+        style="@style/Text.Header" />
+    <TextView
+        android:id="@+id/misc_jokes_female"
+        tools:text="[ Race ] female"
+        style="@style/Text.SubHeader"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Jokes here..."/>
+    <TextView
+        android:id="@+id/misc_jokes_male"
+        tools:text="[ Race ] male"
+        style="@style/Text.SubHeader"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jokes here..."/>
 
-</FrameLayout>
+</LinearLayout>

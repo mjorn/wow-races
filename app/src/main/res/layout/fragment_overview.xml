@@ -30,7 +30,8 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
-                android:paddingTop="@dimen/medium_padding"/>
+                android:paddingTop="@dimen/medium_padding"
+                android:scaleType="centerCrop"/>
             <TextView
                 android:id="@+id/race_desc"
                 tools:text="@string/worgen_desc"
