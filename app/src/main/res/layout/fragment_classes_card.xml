@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="@dimen/small_padding"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:id="@+id/class_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/class_image"
+            style="@style/ClassImage"
+
+            tools:src="@drawable/classes_druid"/>
+
+        <TextView
+            android:id="@+id/class_name"
+            style="@style/ClassName"
+
+            tools:text="@string/druid"
+            tools:textColor="@color/druidColor"/>
+
+        <TextView
+            android:id="@+id/class_specs"
+            style="@style/ClassSpec"
+
+            tools:text="Balance • Restoration • Feral • Guardian"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
