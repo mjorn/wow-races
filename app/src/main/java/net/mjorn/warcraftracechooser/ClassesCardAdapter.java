@@ -35,8 +35,6 @@ public class ClassesCardAdapter extends RecyclerView.Adapter<ClassesCardAdapter.
 
         int item = list[position];
 
-        System.out.println("Binding view for item "+item);
-
         try {
             SQLiteDatabase db = dbHelper.getReadableDatabase();
             Cursor cursor  = db.query(
